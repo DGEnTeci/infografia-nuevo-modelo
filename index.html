@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía: Nuevo Modelo del Servicio de Policía</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-extrabold text-[#008000]">POLICÍA NACIONAL</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#eje" class="text-gray-600 hover:text-[#008000] px-3 py-2 rounded-md text-sm font-medium">Eje Central</a>
+                        <a href="#transformacion" class="text-gray-600 hover:text-[#008000] px-3 py-2 rounded-md text-sm font-medium">Transformación</a>
+                        <a href="#pilares" class="text-gray-600 hover:text-[#008000] px-3 py-2 rounded-md text-sm font-medium">6 Pilares</a>
+                        <a href="#prioridades" class="text-gray-600 hover:text-[#008000] px-3 py-2 rounded-md text-sm font-medium">Prioridades</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bg-[#008000] text-white py-20 md:py-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">NUEVO MODELO DEL SERVICIO DE POLICÍA NACIONAL</h1>
+                <p class="mt-4 text-xl md:text-2xl font-light text-[#E6FFE6] italic">"Orientado a las Personas y los Territorios"</p>
+            </div>
+        </section>
+
+        <section id="eje" class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-[#008000]">Eje Central: La Nueva Seguridad</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">El modelo se fundamenta en cuatro conceptos clave para redefinir la seguridad ciudadana y la convivencia.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-[#E6FFE6] rounded-xl shadow-lg p-6 text-center transition-transform transform hover:scale-105">
+                        <span class="text-5xl text-[#FFD700]">🎯</span>
+                        <h3 class="mt-4 text-xl font-bold text-[#008000]">Objetivo</h3>
+                        <p class="mt-2 text-gray-700">Prioridad nacional en Seguridad Ciudadana a través de la prevención y un servicio cercano, confiable y efectivo.</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-6 text-center transition-transform transform hover:scale-105 border border-gray-200">
+                        <span class="text-5xl text-[#FFD700]">🤝</span>
+                        <h3 class="mt-4 text-xl font-bold text-[#008000]">Trinomía</h3>
+                        <p class="mt-2 text-gray-700">Articulación de Policía, Comunidad y Autoridades** para la solución conjunta de los problemas de seguridad.</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-6 text-center transition-transform transform hover:scale-105 border border-gray-200">
+                        <span class="text-5xl text-[#FFD700]">🌿</span>
+                        <h3 class="mt-4 text-xl font-bold text-[#008000]">Finalidad</h3>
+                        <p class="mt-2 text-gray-700">Contribuir a la convivencia, promoviendo valores cívicos e interviniendo las causas generadoras de violencia.</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-6 text-center transition-transform transform hover:scale-105 border border-gray-200">
+                        <span class="text-5xl text-[#FFD700]">📜</span>
+                        <h3 class="mt-4 text-xl font-bold text-[#008000]">Alineación</h3>
+                        <p class="mt-2 text-gray-700">Basado en el Plan Nacional de Desarrollo y el respeto estricto a los Derechos Humanos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="transformacion" class="py-16 md:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-[#008000]">Transformación Territorial</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">El modelo evoluciona de un sistema rígido a una estructura flexible y focalizada.</p>
+                </div>
+
+                <div class="flex flex-col lg:flex-row items-center justify-center gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-red-500 w-full lg:w-1/3 text-center">
+                        <span class="text-xs font-bold text-red-600 uppercase">DE</span>
+                        <h3 class="mt-2 text-2xl font-bold text-gray-800">Cuadrantes</h3>
+                        <p class="mt-3 text-gray-600">Un sistema de vigilancia comunitaria rígido, con un enfoque geográfico uniforme.</p>
+                    </div>
+
+                    <div class="text-6xl font-thin text-[#008000] my-4 lg:my-0 lg:mx-8 transform lg:rotate-0">
+                        &rarr;
+                    </div>
+
+                    <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-green-500 w-full lg:w-1/3 text-center">
+                        <span class="text-xs font-bold text-green-600 uppercase">A</span>
+                        <h3 class="mt-2 text-2xl font-bold text-gray-800">Micro Territorios</h3>
+                        <p class="mt-3 text-gray-600">Nueva unidad geográfica focalizada, que permite un tratamiento integral, diferencial y flexible a las problemáticas locales.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pilares" class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-[#008000]">Los 6 Pilares Fundamentales</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">Estos son los atributos que guían la prestación del nuevo servicio policial, visualizados como un radar de capacidad integral.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="chart-container h-96 md:h-[500px] max-w-3xl">
+                        <canvas id="pilaresChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="prioridades" class="py-16 md:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-[#008000]">Prioridades Operacionales</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">El modelo enfoca sus capacidades en las amenazas y delitos que más impactan a la ciudadanía.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="chart-container h-[500px] md:h-[600px] max-w-3xl">
+                        <canvas id="prioridadesChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#008000] text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm text-[#E6FFE6]">Infografía SPA generada como demostración de visualización de datos.</p>
+            <p class="text-xs text-gray-200 mt-2">Basado en el "Nuevo Modelo del Servicio de Policía Nacional".</I></p>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            
+            const tooltipTitleCallback = (tooltipItems) => {
+                const item = tooltipItems[0];
+                let label = item.chart.data.labels[item.dataIndex];
+                if (Array.isArray(label)) {
+                    return label.join(' ');
+                } else {
+                    return label;
+                }
+            };
+
+            const processLabels = (labels) => {
+                return labels.map(label => {
+                    if (label.length > 16) {
+                        const words = label.split(' ');
+                        const lines = [];
+                        let currentLine = '';
+                        words.forEach(word => {
+                            if ((currentLine + word).length > 16) {
+                                lines.push(currentLine.trim());
+                                currentLine = word + ' ';
+                            } else {
+                                currentLine += word + ' ';
+                            }
+                        });
+                        lines.push(currentLine.trim());
+                        return lines;
+                    }
+                    return label;
+                });
+            };
+
+            const pilaresCtx = document.getElementById('pilaresChart');
+            if (pilaresCtx) {
+                new Chart(pilaresCtx, {
+                    type: 'radar',
+                    data: {
+                        labels: [
+                            'Preventivo', 
+                            'Flexible', 
+                            'Corresponsable', 
+                            ['Diálogo', 'Ciudadano'], 
+                            'Profesionalización', 
+                            'Integridad'
+                        ],
+                        datasets: [{
+                            label: 'Atributos del Servicio',
+                            data: [10, 10, 10, 10, 10, 10],
+                            backgroundColor: 'rgba(0, 128, 0, 0.2)',
+                            borderColor: 'rgba(0, 128, 0, 1)',
+                            borderWidth: 2,
+                            pointBackgroundColor: 'rgba(0, 128, 0, 1)',
+                            pointBorderColor: '#fff',
+                            pointHoverBackgroundColor: '#fff',
+                            pointHoverBorderColor: 'rgba(0, 128, 0, 1)'
+                        }]
+                    },
+                    options: {
+                        maintainAspectRatio: false,
+                        responsive: true,
+                        scales: {
+                            r: {
+                                beginAtZero: true,
+                                max: 10,
+                                ticks: { display: false },
+                                pointLabels: {
+                                    font: {
+                                        size: 14,
+                                        weight: '600'
+                                    },
+                                    color: '#008000'
+                                },
+                                grid: {
+                                    color: '#B2FFB2' 
+                                },
+                                angleLines: {
+                                    color: '#B2FFB2' 
+                                }
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                display: false
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    title: tooltipTitleCallback
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            const prioridadesCtx = document.getElementById('prioridadesChart');
+            if (prioridadesCtx) {
+                const originalLabels = [
+                    'Lucha contra el Multicrimen',
+                    'Hurto (múltiples modalidades)',
+                    'Homicidio',
+                    'Extorsión',
+                    'Secuestro',
+                    'Trata de personas',
+                    'Instrumentalización de NNA',
+                    'Crímenes contra el medio ambiente',
+                    'Migración irregular'
+                ];
+                
+                new Chart(prioridadesCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: processLabels(originalLabels),
+                        datasets: [{
+                            label: 'Nivel de Prioridad',
+                            data: [10, 10, 9, 9, 8, 8, 8, 7, 6],
+                            backgroundColor: [
+                                '#008000',
+                                '#228B22',
+                                '#3CB371',
+                                '#3CB371',
+                                '#6B8E23',
+                                '#6B8E23',
+                                '#6B8E23',
+                                '#8FBC8F',
+                                '#98FB98'
+                            ],
+                            borderColor: '#ffffff',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        indexAxis: 'y',
+                        maintainAspectRatio: false,
+                        responsive: true,
+                        scales: {
+                            x: {
+                                beginAtZero: true,
+                                grid: {
+                                    display: false,
+                                    drawBorder: false
+                                },
+                                ticks: {
+                                    display: false
+                                }
+                            },
+                            y: {
+                                grid: {
+                                    display: false,
+                                    drawBorder: false
+                                },
+                                ticks: {
+                                    font: {
+                                        size: 14,
+                                        weight: '600'
+                                    },
+                                    color: '#008000'
+                                }
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                display: false
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    title: tooltipTitleCallback
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
